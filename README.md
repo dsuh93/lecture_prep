@@ -96,7 +96,7 @@
 
 ## Part III
 ### Views
-- add `save_and_open_page` in the specs for login
+- add `save_and_open_page` in the specs for login (doesn't work on windows for some reason)
 - users index
   - make sure that erb tags are the correct type for logic vs rendering
   - include debuggers here at anytime if you want to see what variables you have access to
@@ -107,3 +107,9 @@
 - sessions/new
   - if you copy over the users/new form, make sure to remove the `@user.username` and `@user.password`
   - include `Sign In` somehwere on the page
+- users/show
+  - form action: look it up in routes, make sure that it takes in the argument `@user`
+  - adding a goal: make sure the radio button values are true/false and that there's a label with True and False
+  - button name matters
+  - make sure your top level key is SINGULAR: `goal[]` not `goals[]`
+  - delete goal, make sure the goal_url has argument (goal), don't add the form outside of the do block
