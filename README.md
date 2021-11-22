@@ -102,7 +102,7 @@
   - include debuggers here at anytime if you want to see what variables you have access to
 - users/new
   - make sure labels and inputs are nested inside of the form tag
-  - if you use the wrong erb tag in a form, it will not recognize the route on submit
+  - if you use the wrong erb tag in a form, it will not recognize the route on submit, double check `action` in the form opening tag
   - must include `<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">` for the exam
 - sessions/new
   - if you copy over the users/new form, make sure to remove the `@user.username` and `@user.password`
